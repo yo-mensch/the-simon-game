@@ -61,7 +61,14 @@ function checkAnswer(currentLevel){
             $("body").removeClass("game-over");
         }, 200);
         $("h1").text("Game Over, Press Any Key to Restart");
+        restart();
     }
+}
+
+function restart(){
+    level=0;
+    gamePattern = [];
+    isStarted = false;
 }
 
 // animation and sounds V 
